@@ -115,6 +115,28 @@ class MyClass{
 let myClass = new MyClass("Paco",43)
 console.log(myClass)
 
+let testSubj = {
+    name: "Pablo",
+    age: 12
+};
+
+console.log(testSubj)
+
+console.log(myClass.name); // -> Paco
+console.log(testSubj.name); // -> Pablo
+   
+console.log(myClass.age); // -> 43
+myClass.age = 44;
+console.log(myClass.age); // -> 44
+   
+console.log(myClass.phone); // -> undefined
+myClass.phone = "904-399-7557";
+
+console.log(myClass.phone); // -> 904-399-7557
+
+delete myClass.phone;
+console.log(myClass.phone); // -> undefined
+
 // Enum
 const MyEnum = {
     DART:"dart",PYTHON:"python",JAVA:"java",KOTLIN:"kotlin",JAVASCRIPT:"javascript"
